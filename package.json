@@ -1,0 +1,16 @@
+{
+  "name": "ground",
+  "version": "1.0.0",
+  "description": "CSS framework",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theted/Ground.git"
+  },
+  "author": "Fredrik Sundberg <ted.sundberg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theted/Ground/issues"
+  },
+  "homepage": "https://github.com/theted/Ground#readme"
+}
