@@ -1,0 +1,21 @@
+include template
+
+- lipsum = 'Lorem ipsum sit dolor amet'
+- max = 12
+- n = 0
+
+h2 Grid
+
+section.grid
+  .item
+    h3 Lorem
+    p= lipsum
+
+while n < max
+  - n ++
+  - s = 0
+  - o = n
+  section.grid
+    while s < o
+      .item= "Item " + (s + 1)
+      - s ++
