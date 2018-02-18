@@ -31,6 +31,16 @@ gulp.task('build-views', function buildHTML() {
   .pipe(gulp.dest(config.path));
 });
 
+// browser-sync tasks - watches files for changes and updates connected browsers automagically
+gulp.task('browser-sync', function() {
+  browserSync({
+    files: config.bsFiles,
+    port: config.browserSyncPort,
+    proxy: "localhost:" + config.port,
+    browser: [],
+  });
+});
+
 // setup default gulp task - simply build everything
 gulp.task('default', [
   'build-stylus',
